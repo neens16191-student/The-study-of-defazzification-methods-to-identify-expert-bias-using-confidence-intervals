@@ -10,7 +10,6 @@ The main focus of the research is the sensitivity of the confidence-interval-bas
 ### Repository Structure
 - `main.py` — Python implementation of expert bias detection using confidence intervals, including multiple defuzzification strategies.
 - `50_alternatives.json` — A fixed synthetic dataset of 50 alternatives with ground-truth labels indicating the biased expert for each alternative.
-- `README.md` — Project description and usage information.
 
 ### Dataset Description
 The dataset consists of 50 synthetic decision-making alternatives.  
@@ -43,7 +42,6 @@ Users can reproduce the results by running `main.py` without modifying the datas
 ### Структура репозитория
 - `main.py` — реализация алгоритма выявления предвзятых экспертов с использованием доверительных интервалов и различных методов дефаззификации.
 - `50_alternatives.json` — синтетический датасет из 50 альтернатив с указанием истинно предвзятого эксперта для каждой альтернативы.
-- `README.md` — описание проекта и инструкции по воспроизведению экспериментов.
 
 ### Описание датасета
 Датасет состоит из 50 синтетических альтернатив принятия решений.  
