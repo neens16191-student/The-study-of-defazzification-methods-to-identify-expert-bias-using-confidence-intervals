@@ -1,63 +1,26 @@
 # The-study-of-defazzification-methods-to-identify-expert-bias-using-confidence-intervals
 
-## English
+Study of defuzzification methods in triangular fuzzy number on the results of ranking alternatives: an experimental comparison of defuzzification methods in the Confidence Interval method.
 
-### Overview
-This repository contains the source code and dataset used in the study of how different defuzzification methods for triangular fuzzy numbers affect the detection of biased experts using confidence interval overlap.
+# About
+This repository presents an experimental study of how different defuzzification strategies applied to triangular fuzzy numbers affect the detection of biased experts using confidence intervals.
 
-The main focus of the research is the sensitivity of the confidence-interval-based expert bias detection method to the choice of defuzzification strategy applied to fuzzy expert evaluations.
+The work focuses on modifying the preprocessing stage of expert evaluations by applying various defuzzification methods and analyzing their impact on the sensitivity and stability of the confidence-interval-based bias detection algorithm.
 
-### Repository Structure
-- `main.py` — Python implementation of expert bias detection using confidence intervals, including multiple defuzzification strategies.
-- `50_alternatives.json` — A fixed synthetic dataset of 50 alternatives with ground-truth labels indicating the biased expert for each alternative.
+The prototype and experiments were developed as part of a research project on group decision-making methods.
 
-### Dataset Description
-The dataset consists of 50 synthetic decision-making alternatives.  
-Each alternative contains:
-- A hierarchical criteria structure,
-- Expert evaluations for each criterion,
-- Expert and criterion weights,
-- A `ground_truth` field specifying the expert that was intentionally generated as biased.
+# Authors and contributors
+The advisor and contributor Vladimir A. Parkhomenko Seniour Lecturer of SPbPU ICSC. The main contributor Mikhail E. Tsarev student of SPbPU ICSC.
 
-The dataset is generated once and reused for all experiments to ensure full reproducibility.
+# Warranty
+The contributors give no warranty for the using of the software.
 
-### Reproducibility
-All experiments reported in the study are based exclusively on the provided dataset (`50_alternatives.json`).  
-Users can reproduce the results by running `main.py` without modifying the dataset.
+# Licence
+This program is open to use anywhere and is licensed under the GNU General Public License v3.0.
 
-### Requirements
-- Python 3.8+
-- `numpy`
-- `scipy`
+# Project structure
+The repository contains the following files:
 
----
-
-## Русский
-
-### Описание
-Данный репозиторий содержит исходный код и датасет, использованные в исследовании влияния выбора функции дефаззификации треугольных нечетких чисел на выявление предвзятых экспертов методом пересечения доверительных интервалов.
-
-Основное внимание в работе уделено анализу чувствительности алгоритма обнаружения предвзятости экспертов к различным стратегиям дефаззификации нечетких экспертных оценок.
-
-### Структура репозитория
-- `main.py` — реализация алгоритма выявления предвзятых экспертов с использованием доверительных интервалов и различных методов дефаззификации.
-- `50_alternatives.json` — синтетический датасет из 50 альтернатив с указанием истинно предвзятого эксперта для каждой альтернативы.
-
-### Описание датасета
-Датасет состоит из 50 синтетических альтернатив принятия решений.  
-Каждая альтернатива включает:
-- Иерархическую структуру критериев,
-- Оценки экспертов по каждому критерию,
-- Веса экспертов и критериев,
-- Поле `ground_truth`, указывающее на эксперта, который был сгенерирован как предвзятый.
-
-Датасет генерируется один раз и используется во всех экспериментах, что обеспечивает воспроизводимость результатов.
-
-### Воспроизводимость
-Все экспериментальные результаты, представленные в работе, получены исключительно на основе датасета `50_alternatives.json`.  
-Для воспроизведения экспериментов достаточно запустить файл `main.py` без изменения исходных данных.
-
-### Требования
-- Python 3.8+
-- `numpy`
-- `scipy`
+- `main.py` — Python implementation of expert bias detection using confidence intervals with multiple defuzzification methods.
+- `50_alternatives.json` — A synthetic dataset of 50 decision-making alternatives with ground-truth labels indicating biased experts.
+- `README.md` — Project description.
